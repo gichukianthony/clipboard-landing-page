@@ -1,0 +1,288 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+.header {
+    padding: 4rem 0 2rem;
+}
+
+.header img {
+    width: 125px;
+}
+
+/* Main Content */
+.main {
+    padding: 2rem 0;
+}
+
+/* History Section */
+.history {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.history-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.history-content p {
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    box-shadow: 0 4px 10px rgba(38, 186, 164, 0.3);
+}
+
+.btn-secondary {
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+    box-shadow: 0 4px 10px rgba(97, 115, 255, 0.3);
+}
+
+/* Snippet Section */
+.snippet {
+    max-width: 700px;
+    margin: 4rem auto;
+}
+
+.snippet h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.snippet p {
+    color: hsl(201, 11%, 66%);
+}
+
+/* Desktop Section */
+.desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin: 4rem 0;
+    padding: 0 2rem;
+}
+
+.desktop-image {
+    position: relative;
+    width: 100%;
+}
+
+.desktop-image img {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    left: -50px;
+}
+
+.desktop-content {
+    text-align: left;
+}
+
+.feature {
+    margin-bottom: 2.5rem;
+}
+
+.feature h3 {
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    color: hsl(201, 11%, 66%);
+    line-height: 1.6;
+}
+
+/* Clipboard Section */
+.clipboard {
+    max-width: 700px;
+    margin: 4rem auto;
+}
+
+.clipboard img {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem 0;
+}
+
+/* Blacklist Section */
+.blaclist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.blaclist img {
+    margin-bottom: 1rem;
+}
+
+.blaclist p {
+    color: hsl(201, 11%, 66%);
+}
+
+/* Icons Section */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.icons img {
+    height: 40px;
+    filter: brightness(0);
+    opacity: 0.5;
+}
+
+/* iOS Section */
+.ios {
+    max-width: 700px;
+    margin: 4rem auto;
+}
+
+.ios h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ios p {
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f6f8;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+footer img {
+    width: 60px;
+}
+
+footer p {
+    color: hsl(210, 10%, 33%);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer p:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+/* Attribution */
+.attribution {
+    font-size: 0.8rem;
+    color: hsl(201, 11%, 66%);
+    padding: 1rem 0;
+}
+
+.attribution a {
+    color: hsl(171, 66%, 44%);
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .desktop {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .desktop-image img {
+        left: 0;
+        max-width: 100%;
+    }
+
+    .desktop-content {
+        text-align: center;
+    }
+
+    .feature {
+        margin-bottom: 2rem;
+    }
+
+    .blaclist {
+        grid-template-columns: 1fr;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
